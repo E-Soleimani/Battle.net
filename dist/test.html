@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Style.css" />
+  </head>
+  <body>
+    <!-- Main navigation container -->
+    <section class="mobile_navbar flex justify-between items-center w-full h-14 bg-primary desktop:hidden mobile:flex">
+      <div class="menu">
+
+        <!-- Sidenav -->
+        <nav
+          id="sidenav-6"
+          class="fixed left-0 top-0 z-[1035] h-screen w-60 -translate-x-full overflow-hidden bg-primary shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800"
+          data-te-sidenav-init
+          data-te-sidenav-hidden="true"
+          data-te-sidenav-accordion="true"
+        >
+          <ul
+            class="relative m-0 list-none px-[0.2rem] "
+            data-te-sidenav-menu-ref
+          >
+            <li class="relative mt-6">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear"
+                data-te-sidenav-link-ref
+              >                
+                <img src="./icons/Logo.svg" alt="">
+              </a>
+            </li>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                data-te-sidenav-link-ref
+              >               
+                <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Warcraft</span>
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                <img src="./icons/arrow-down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="!visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                data-te-sidenav-collapse-ref
+              >
+                <li class="flex items-center h-16 pl-4 font-notobold rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/WOW.svg" alt=""><div><p class="font-notoregular text-gray-200">World of Warcraft</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/WOW-Classic.svg" alt=""><div><p class="font-notoregular text-gray-200">World of Warcraft Classic</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/W-Rumble.svg" alt=""><div><p class="font-notoregular text-gray-200">Warcraft Rumble</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/W-III.svg" alt=""><div><p class="font-notoregular text-gray-200">Warcraft III</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Heartstone.svg" alt=""><div><p class="font-notoregular text-gray-200">Heartstone</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear "
+                data-te-sidenav-link-ref
+              >               
+                <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Call Of Duty</span>
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                  <img src="./icons/Arrow-Down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="!visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                data-te-sidenav-collapse-ref
+              >
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/COD-ModernwarfareIII.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern Warfare III</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Warzone.svg" alt=""><div><p class="font-notoregular text-gray-200">Warzone</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/COD-ModernwarfareII.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern warfare II</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Vanguard.svg" alt=""><div><p class="font-notoregular text-gray-200">Vanguard</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/BO-Coldwar.svg" alt=""><div><p class="font-notoregular text-gray-200">Black ops cold war</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/COD-ModernwarfareI.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern Warfare</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/COD-Modernwarfare2rR.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern Warfare 2</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                  <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/BO4.svg" alt=""><div><p class="font-notoregular text-gray-200">Black ops 4</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                data-te-sidenav-link-ref
+              >
+              <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Diablo</span>
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                  <img src="./icons/Arrow-Down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                data-te-sidenav-collapse-ref
+              >
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Diablo-IV.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo IV</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Diablo-Immortal.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo Immortal</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Diablo-III.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo III</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Diablo-II.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo II</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                data-te-sidenav-link-ref
+              >
+              <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Overwatch</span>
+                <span
+                  class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+                >
+                  
+                </span>
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                  <img src="./icons/Arrow-Down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                data-te-sidenav-collapse-ref
+              >
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Overwatch2.svg" alt=""><div><p class="font-notoregular text-gray-200">Overwatch 2</p><p class="font-notoregular text-xs text-[#65696d]">Team-Based Action Game</p></div></a></li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                data-te-sidenav-link-ref
+              >
+              <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Starcraft</span>               
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                  <img src="./icons/Arrow-Down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                data-te-sidenav-collapse-ref
+              >
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Starcraft2.svg" alt=""><div><p class="font-notoregular text-gray-200">Starcraft II</p><p class="font-notoregular text-xs text-[#65696d]">Real-Time Strategy</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Starcraft1.svg" alt=""><div><p class="font-notoregular text-gray-200">Starcraft</p><p class="font-notoregular text-xs text-[#65696d]">Real-Time Strategy</p></div></a></li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                data-te-sidenav-link-ref
+              >
+              <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Other</span>               
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                  <img src="./icons/Arrow-Down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                data-te-sidenav-collapse-ref
+              >
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Billizcon-col.svg" alt=""><div><p class="font-notoregular text-gray-200">BlizzCon Collection</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Billizard-Arcade.svg" alt=""><div><p class="font-notoregular text-gray-200">Blizzard Arcade Collection</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Crash-Bandicoot.svg" alt=""><div><p class="font-notoregular text-gray-200">Crash Bandicoot 4</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./icons/Heros.svg" alt=""><div><p class="font-notoregular text-gray-200">Heroes Of The Storm</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+              </ul>
+            </li>
+          </ul>
+          <hr class="my-4" />
+          <ul
+            class="relative m-0 list-none px-[0.2rem]"
+            data-te-sidenav-menu-ref
+          >
+            <li class="relative">
+            <a
+              class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+              data-te-sidenav-link-ref
+            >
+              <span class="text-[#6cdb00] text-[17px] font-notoregular group-hover:text-white duration-200">Black Friday Sale</span>               
+            </a>
+            <li class="relative">
+              <a
+                class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                data-te-sidenav-link-ref
+              >
+              <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Battle.net Balance</span>               
+                <span
+                  class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                  data-te-sidenav-rotate-icon-ref
+                >
+                  <img src="./icons/Arrow-Down.svg" alt="">
+                </span>
+              </a>
+              <ul
+                class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block bg-gray-950"
+                data-te-sidenav-collapse-ref
+              >
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2 w-full h-full group"><img class="w-6" src="./icons/Add.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Add Balance</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./icons/Gift.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Gift Balance</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./icons/History.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Balance History</p></div></a></li>
+                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./icons/Help.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Balance Help</p></div></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- Sidenav -->
+
+        <!-- Toggler -->
+        <button
+          class="inline-block h-8 w-8 rounded bg-primary px-2 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+          data-te-sidenav-toggle-ref
+          data-te-target="#sidenav-6"
+          aria-controls="#sidenav-6"
+          aria-haspopup="true"
+        >
+          <span class="block [&>svg]:h-7 [&>svg]:w-7 [&>svg]:text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-8 w-8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+        <!-- Toggler -->
+
+      </div>
+      <div class="logo">
+        <img class="w-[150px] h-12" src="./icons/Logo.svg" alt="" />
+      </div>
+      <div class="account">
+
+        <!-- Sidenav -->
+        <nav
+          id="sidenav-7"
+          class="fixed right-0 top-0 z-[1035] h-screen w-60 translate-x-full overflow-hidden bg-primary shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:-translate-x-0 dark:bg-zinc-800"
+          data-te-sidenav-init
+          data-te-sidenav-hidden="true"
+          data-te-sidenav-right="true"
+        >
+          <ul
+            class="relative m-0 list-none px-[0.2rem]"
+            data-te-sidenav-menu-ref
+          >
+          <li class="relative mt-6">
+            <a
+              class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear"
+              data-te-sidenav-link-ref
+            >                
+              <img src="./icons/Logo.svg" alt="">
+            </a>
+          </li>
+            <li class="relative">
+              <div class="h-[288px] flex flex-col p-3">
+                <button class="w-full h-12 bg-button text-lg font-notobold text-white my-4 mx-auto rounded-md hover:bg-blue-400 duration-300 ">Log In</button>  
+                <a href="#"  class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M11.675 13.771a6.488 6.488 0 0 0-.954 2.042 6.833 6.833 0 0 1-3.048-.864c-.335.163-.705.457-1.057.916-.094.123-.18.248-.257.375a6.97 6.97 0 0 0 4.159 1.744c.052.71.218 1.388.48 2.016a9 9 0 1 1 8.974-8.282A6.452 6.452 0 0 0 18 11.076V11a7 7 0 1 0-12.973 3.651c.762-.995 1.821-1.75 3.002-1.85.853.643 1.874 1.018 2.971 1.018.229 0 .454-.016.675-.048Z"></path><path d="M14.375 8.975a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0Zm-2 0a1.375 1.375 0 1 1-2.75 0 1.375 1.375 0 0 1 2.75 0ZM16.455 13h1.093a.5.5 0 0 1 .492.412l.167.936a.55.55 0 0 0 .288.381c.098.052.191.11.282.171a.55.55 0 0 0 .49.076l1.051-.368a.5.5 0 0 1 .59.209l.518.837a.5.5 0 0 1-.12.659l-.943.725a.55.55 0 0 0-.205.445v.058a.55.55 0 0 0 .205.445l.943.726a.5.5 0 0 1 .12.659l-.516.837a.5.5 0 0 1-.591.209l-1.053-.369a.55.55 0 0 0-.49.076c-.09.062-.184.119-.282.171a.55.55 0 0 0-.289.382l-.166.935a.5.5 0 0 1-.493.412h-1.093a.5.5 0 0 1-.492-.412l-.167-.935a.55.55 0 0 0-.288-.382 3.132 3.132 0 0 1-.282-.171.55.55 0 0 0-.49-.075l-1.05.367a.5.5 0 0 1-.591-.209l-.517-.837a.5.5 0 0 1 .12-.659l.94-.724a.55.55 0 0 0 .206-.445v-.06a.55.55 0 0 0-.205-.445l-.942-.725a.5.5 0 0 1-.12-.659l.517-.837a.5.5 0 0 1 .59-.21l1.052.37a.55.55 0 0 0 .49-.076c.09-.062.185-.12.283-.172a.55.55 0 0 0 .29-.382l.166-.934a.5.5 0 0 1 .492-.412ZM17 19.09a1.58 1.58 0 1 0 0-3.157 1.58 1.58 0 0 0 0 3.158Z"></path>
+                    </svg>
+                    <span class="text-gray-400 font-notoregular group-hover:text-white">Account Settings</span>
+                </a>
+                <a href="#"  class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M10.55 20.03 12 21.35l1.45-1.31.04-.036C18.616 15.344 22 12.27 22 8.5 22 5.42 19.58 3 16.5 3c-1.116 0-2.204.745-3.128 1.617A18.606 18.606 0 0 0 12 6.09c-.39-.459-.856-.986-1.372-1.473C9.704 3.745 8.616 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.777 3.394 6.855 8.537 11.518l.013.012Zm1.557-1.472-.002.002-.1.09-.109-.099-.003-.003c-2.615-2.371-4.623-4.198-6.001-5.883C4.536 11.008 4 9.733 4 8.5 4 6.525 5.525 5 7.5 5c.197 0 .607.121 1.25.631.609.484 1.193 1.129 1.727 1.756L12 9.175l1.523-1.788c.534-.627 1.118-1.272 1.727-1.756.643-.51 1.053-.631 1.25-.631C18.475 5 20 6.525 20 8.5c0 1.233-.537 2.508-1.892 4.167-1.379 1.686-3.386 3.515-6 5.89Z"></path>
+                    </svg>
+                    </svg>
+                    <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Wish List</span>
+                </a>
+                <a href="#"  class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M2 2h2v16H2V2Zm3 20v-2H3v2h2Zm4-2H7v2h2v-2Zm2 0h5v2h-5v-2Zm10 0h-3v2h3v-2Zm1-18h-3v16h3V2Zm-6 0h1v16h-1V2Zm-2 0h-2v16h2V2ZM6 2h4v16H6V2Z"></path>
+                    </svg>
+                    <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Redeem Code</span>
+                </a>
+                <a href="#" class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M13.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H15v16h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H17v-3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3V4h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-5ZM17 9h3v6h-3V9ZM4 7h9v2H4v6h9v2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                    </svg>
+                    <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Change BattleTag</span>
+                </a> 
+              </div>
+            <div class="w-full p-3 bottom-0 bg-secondary">
+                <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.31 3.31 0 0 0-.47.248.518.518 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102ZM11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Z"></path><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0Z"></path>
+                </svg>                                    
+                  <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Support</span>
+                </a>
+                <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray" class="w-6 h-6 group-hover:fill-white" class="w-6 h-6">
+                    <path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
+                    <path fill-rule="evenodd" d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z" clip-rule="evenodd" />
+                  </svg>                                    
+                  <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Battle.net Mobile App</span>
+                </a>
+                <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M3.114 20.31 4 15 15.585 3.414a2 2 0 0 1 2.828 0l2.172 2.172a2 2 0 0 1 0 2.828L9 20l-5.31.885a.5.5 0 0 1-.575-.576Zm4.924-2.177 8.34-8.34-2.172-2.172-8.34 8.34-.434 2.606 2.606-.434Zm9.754-9.754L19.171 7l-2.172-2.172-1.378 1.38 2.171 2.17Z"></path>
+                    </svg>
+                    <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Create Account</span>
+                </a>
+            </div>
+            </li>
+            
+          </ul>
+        </nav>
+        <!-- Sidenav -->
+
+        <!-- Toggler -->
+        <button
+          class="inline-block rounded bg-primary px-2 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+          data-te-sidenav-toggle-ref
+          data-te-target="#sidenav-7"
+          aria-controls="#sidenav-7"
+          aria-haspopup="true"
+        >
+          <span class="block [&>svg]:h-7 [&>svg]:w-7 [&>svg]:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-6 h-6 " viewBox="0 0 24 24" part="icon blz-icon">
+              <path d="M15.75 9.75a3.733 3.733 0 0 1-1.433 2.949A3.734 3.734 0 0 1 12 13.5a3.734 3.734 0 0 1-3.023-1.53 3.75 3.75 0 1 1 6.773-2.22Zm-5.5 0a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 0 0-3.5 0Z"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.047-4.73c.148.193.28.393.393.595A7.972 7.972 0 0 1 12 20a7.972 7.972 0 0 1-5.445-2.139l.005.005c.114-.202.245-.403.393-.596.442-.575.92-.943 1.36-1.13a7.366 7.366 0 0 0 3.687.992c1.34 0 2.594-.364 3.687-.993.44.188.919.556 1.36 1.13Zm-8.835-3.194c-1.188.268-2.237 1.115-2.99 2.172H5.22a8 8 0 1 1 13.56 0c-.755-1.056-1.804-1.904-2.992-2.172a3.627 3.627 0 0 0-.487-.075c-.947.715-2.082 1.131-3.3 1.131-1.22 0-2.355-.416-3.302-1.131-.164.014-.327.04-.487.075Z"></path>
+            </svg>
+          </span>
+        </button>
+        <!-- Toggler -->
+
+      </div>
+    </section>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  </body>
+</html>
