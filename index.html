@@ -562,7 +562,7 @@
         <!-- Banner -->
         <section class="banner desktop:w-[85%] mobile:w-[98%] h-[360px] mx-auto mt-4">
             <!-- Swiper -->
-            <div class="swiper banners">
+            <div class="swiper banners group">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide relative"><img class="object-cover object-top" src="./dist/images/banner1.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl">Descend into the depths of Azeroth</h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Pre-purchase Now</button></div></div>
                     <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner2.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Prepare for a new age of Cataclysm </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Upgrade Now</button></div></div>
@@ -572,8 +572,8 @@
                     <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner6.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Get bonus Overwatch Coins with purchase for a limited time only! </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Buy Now</button></div></div>
                     <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner7.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl">Available Now</h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Buy Now</button></div></div>
                 </div>
-                <div class="swiper-button-next"><img class="h-full" src="./dist/icons/Arrow-Right.svg" alt=""></div>
-                <div class="swiper-button-prev"><img class="h-full" src="./dist/icons/Arrow-Left.svg" alt=""></div>
+                <div class="swiper-button-next desktop:group-hover:block"><img class="h-full" src="./dist/icons/Arrow-Right.svg" alt=""></div>
+                <div class="swiper-button-prev desktop:group-hover:block"><img class="h-full" src="./dist/icons/Arrow-Left.svg" alt=""></div>
                 <div class="swiper-pagination"></div>
             </div>
             <!-- !Swiper -->
@@ -1368,8 +1368,8 @@
     <!-- !Footer -->
 
     <!-- To UP Button -->
-    <section class="to_up_button h-[44px] fixed tablet:bottom-10 tablet:right-10 mobile:bottom-4 mobile:right-4  bg-primary">
-        <a href="#top" class="inline-block w-[44px] h-[44px] p-[11px] rounded-md overflow-hidden border border-gray-600 hover:border-gray-200 duration-200"><img  class="w-[24px] " src="./dist/icons/Arrow-Up.svg" alt=""></a>
+    <section class="to_up_button h-[44px] fixed tablet:bottom-10 tablet:right-10 mobile:bottom-4 mobile:right-4 z-50 rounded-md bg-primary">
+        <a href="#top" class="inline-block w-[44px] h-[44px] p-[11px] rounded-md border border-gray-600 hover:border-gray-200 duration-200"><img  class="w-[24px] " src="./dist/icons/Arrow-Up.svg" alt=""></a>
     </section>
     <!-- !To UP Button -->
 

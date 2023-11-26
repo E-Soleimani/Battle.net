@@ -32,7 +32,3 @@
   border: 1px solid gray;
   display: none;
 }
-
-.swiper:hover :is(.banner .swiper-button-next, .banner .swiper-button-prev){
-  display: block;
-}
